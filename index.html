@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa Culturama</title>
+</head>
+<body>
+  <header>
+    <h1>Pesquisa Online</h1>
+  </header>
+  <section>
+    <form action="" method="get"> <!-- Action é para onde vai enviar os dados | método "get" pega os dados e deixa aparente na URL | método "post" = onde os dados vão em um header como uma requisição para o backend-->
+
+      <!-- Determinamos uma seção para que os mecanismos de busca interpretem -->
+      <fieldset> <!-- Navegador aqui começa um conjunto de elementos-->
+        <legend>Dados Pessoais</legend>
+                              <!-- DADOS PESSOAIS -->
+        <!-- Para definir que é um espaço de nome usamos "label"-->
+      <label for="userName">Nome</label> <!-- Etiqueta para o userName-->
+        <input type="text" name="userName" required> <!-- Atributos sempre em ingles-->
+        <br>
+      <label for="ageUser">Idade</label>
+        <input type="number" min="12" max="100" name="ageUser" required>
+        <br>
+      <label for="birthDate">Data de Nascimento</label>
+        <input type="date" name="birthDate">
+        <br>
+      <label for="userEmail">Email</label>
+        <input type="email" name="userEmail" required placeholder="seuemail@gmail.com">
+        <br>
+      <label for="userPhone">Número de Telefone</label>      <!-- Placeholder indica como o cliente deve preencher-->
+        <input type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="00000000000"> <!-- Precisamos passar um padrão de preenchimento | Numero 0 - 9, 11 digitos-->
+        <br>
+      <label for="photoUser">Uppload photo</label>
+        <input type="file" accept="image/*" name="photoUser"> <!-- tipo arquivo que aceita qualquer tipo de imagems apenas-->
+        <br>
+
+      </fieldset>
+      <button type="submit">Enviar</button> <!-- Submit = botão que submete as infos para algum lugar-->
+    </form>
+  </section>
+</body>
+</html>
