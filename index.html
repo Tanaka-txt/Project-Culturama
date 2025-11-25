@@ -35,8 +35,63 @@
       <label for="photoUser">Uppload photo</label>
         <input type="file" accept="image/*" name="photoUser"> <!-- tipo arquivo que aceita qualquer tipo de imagems apenas-->
         <br>
-
       </fieldset>
+
+      <fieldset>
+        <legend>Perfil</legend>
+
+        <p>Gênero: </p>
+        <input type="radio" name="userGender" value="Feminino">
+        <label for="userGender">Feminino</label>
+
+        <input type="radio" name="userGender" value="Masculino">
+        <label for="userGender">Masculino</label>
+
+        <input type="radio" name="userGender" value="Não Identificar">
+        <label for="userGender">Prefiro Não Informar</label>
+        <br>
+        <p>Estado Civíl: </p>
+        <select name="maritalStatus">
+          <option value="Not Select">Selecione...</option>
+          <option value="Casado">Casado</option>
+          <option value="Solteiro">Solteiro</option>
+          <option value="União Estável">União Estável</option>
+          <option value="Divorciado">Divorciado</option>
+        </select>
+        <label for="stateUser">Estado: </label>
+        <select name="stateUser" required>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="DF">DF</option>
+          <option value="ES">ES</option>
+          <option value="GO">GO</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="RS">RS</option>
+          <option value="SC">SC</option>
+          <option value="SE">SE</option>
+          <option value="SP">SP</option>
+          <option value="TO">TO</option>
+        </select>
+
+        <label for="cityUser">Cidade:</label>
+        <input type="text" name="cityUser">
+      </fieldset>
+
       <button type="submit">Enviar</button> <!-- Submit = botão que submete as infos para algum lugar-->
     </form>
   </section>
