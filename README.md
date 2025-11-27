@@ -54,3 +54,10 @@
 
 - Enviar
 - Limpar
+
+---
+
+## Fontes Usadas do Google Fontes
+
+Titulos = Fjalla One
+Textos = Work Sans
