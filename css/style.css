@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Utilizado para fazer os calculos altomaticamente de espessura de borda*/
+}
+
+/* 
+Preciso definir um tamanho para o meu forms, mas eu não posso definir isso no body porque se não todos os elementos teriam essa característica.
+  Para isso eu coloco todo os meu header e selection dentro do main que está dentro do body, o main é um CONTAINER
+*/
+
+body{
+  background-color: #f9f9f9;
+  font-family: "Work Sans", sans-serif, Arial;
+}
+
+main{
+  width: 100%; /*largura*/
+  max-width: 700px; /*no maximo para tablets e computadores eu quero que ele tenha 700px, se apresentar mais de 700px pare em 700px*/
+  margin: 0 auto; /*(Top/Bottom) = 0 | (left/right) = auto - Melhor para dipositivos variados*/
+}
+
+header {
+  /* background-color: aqua;  -- São elementos de bloco e não de linha*/
+  text-align: center; /*Centraliza*/
+  margin-bottom: 20px;
+}
+
+image{
+  width: 100px;
+}
+
+h1{
+  font-family: "Fjalla One", sans-serif, Arial;
+}
+
+form{ /*Configura todo o formulário*/
+  background-color: #ffffff;
+  padding: 15px; /*Espaçamento interno entre os elementos*/
+  border-radius: 10px;
+}
+
+fieldset{ /*Separações entre os itens do forms*/
+  padding: 15px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+legend{
+  font-size: 18px;
+  font-weight: bold; /*Peso de fonte bold*/
+  padding: 0px 6px; /*(Top/Bottom) = 0 | (left/right) = 6px*/
+}
