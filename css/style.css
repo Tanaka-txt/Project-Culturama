@@ -52,3 +52,31 @@ legend{
   font-weight: bold; /*Peso de fonte bold*/
   padding: 0px 6px; /*(Top/Bottom) = 0 | (left/right) = 6px*/
 }
+
+label{
+  /*background-color: aqua;*/ /*São elementos de texto*/
+  display: inline-block; /*Vou transformar em um block que se comporte como linha*/
+  margin-bottom: 5px;
+}
+input, section ,textarea{
+  background-color: red; /*Usado para verificar o tamanho do input*/
+  width: 100%;
+  padding: 8px /*Aumenta o espaço interno do input*/;
+  margin-bottom: 8px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+}
+
+textarea{
+  min-height: 100px; /*Tamanho minimo de largura*/
+}
+
+input[type="radio"],[type="checkbox"]{
+  width: auto;
+}
+
+input[type="color"]{
+  padding: 0px 5px;
+  width: 40px;
+}
+
