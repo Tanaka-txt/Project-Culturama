@@ -59,7 +59,7 @@ label{
   margin-bottom: 5px;
 }
 input, section ,textarea{
-  background-color: red; /*Usado para verificar o tamanho do input*/
+  /*background-color: red;*/ /*Usado para verificar o tamanho do input*/
   width: 100%;
   padding: 8px /*Aumenta o espaço interno do input*/;
   margin-bottom: 8px;
@@ -76,7 +76,23 @@ input[type="radio"],[type="checkbox"]{
 }
 
 input[type="color"]{
-  padding: 0px 5px;
+  padding: 0px 2px;
   width: 40px;
 }
 
+/* 
+Quando eu interajo com um input o navegador já disponibiliza um "focus" 
+
+*/
+
+/* Colocar se está valido ou não de uma cor diferente */
+
+input:invalid{
+  border-color: red;
+}
+
+input[type="text"]:valid,
+input[type="number"]:valid,
+input[type="email"]:valid{
+  border-color: green;
+}
