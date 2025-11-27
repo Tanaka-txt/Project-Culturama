@@ -97,7 +97,6 @@
         <legend>Habitos</legend>
 
         <p>Redes Sociais:</p>
-
         <input type="checkbox" name="social" id="insta" value="instagram">
         <label for="insta">Instagram</label>
         <br>
@@ -116,7 +115,23 @@
 
         <input type="checkbox" name="social" id="face" value="facebook">
         <label for="face">Facebook</label>
+        <br>
+        <br>
+        <label for="genderMusical">Estilo Musical: </label>
+        <input list="listaGeners" type="text" name="musicalGenderUser" id="genderMusical">
+        <datalist id="listaGeners"> <!-- Este ID serve para o input identificar essa lista-->
+          <option value="Pop">
+          <option value="Jazz">
+          <option value="Eletrônica">
+          <option value="HipHop">
+          <option value="Samba">
+          <option value="Sertanejo">
+          <option value="Reggae">
+          <option value="Funk">
+          <option value="Mpb">
+        </datalist>
       </fieldset>
+      
       <button type="submit">Enviar</button> <!-- Submit = botão que submete as infos para algum lugar-->
     </form>
   </section>
@@ -127,4 +142,8 @@
 <!-- Como colocar para, eu clicar na palavra já direcionar para o usuário poder marcar ou digitar o campo de texto
 - Faço isso por meio do ID
 não podemos ter um ID repetido é tipo CPF do elemento 
+-->
+
+<!-- 
+Para o caso do genero musical, não posso apenas introduzir um select pq preciso de um texto aberto, vou usar o input type=text e um data-list
 -->
