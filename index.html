@@ -17,23 +17,23 @@
         <legend>Dados Pessoais</legend>
                               <!-- DADOS PESSOAIS -->
         <!-- Para definir que é um espaço de nome usamos "label"-->
-      <label for="userName">Nome</label> <!-- Etiqueta para o userName-->
-        <input type="text" name="userName" required> <!-- Atributos sempre em ingles-->
+      <label for="name">Nome</label> <!-- Etiqueta para o userName-->
+        <input type="text" name="userName" id="name" required> <!-- Atributos sempre em ingles-->
         <br>
-      <label for="ageUser">Idade</label>
-        <input type="number" min="12" max="100" name="ageUser" required>
+      <label for="age">Idade</label>
+        <input type="number" id="age" min="12" max="100" name="ageUser" required>
         <br>
-      <label for="birthDate">Data de Nascimento</label>
-        <input type="date" name="birthDate">
+      <label for="date">Data de Nascimento</label>
+        <input type="date" name="birthDate" id="date">
         <br>
-      <label for="userEmail">Email</label>
-        <input type="email" name="userEmail" required placeholder="seuemail@gmail.com">
+      <label for="email">Email</label>
+        <input type="email" name="userEmail" id="email" required placeholder="seuemail@gmail.com">
         <br>
-      <label for="userPhone">Número de Telefone</label>      <!-- Placeholder indica como o cliente deve preencher-->
-        <input type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="00000000000"> <!-- Precisamos passar um padrão de preenchimento | Numero 0 - 9, 11 digitos-->
+      <label for="phone">Número de Telefone</label>      <!-- Placeholder indica como o cliente deve preencher-->
+        <input type="tel" name="userPhone" id="phone" pattern="[0-9]{11}" placeholder="00000000000"> <!-- Precisamos passar um padrão de preenchimento | Numero 0 - 9, 11 digitos-->
         <br>
-      <label for="photoUser">Uppload photo</label>
-        <input type="file" accept="image/*" name="photoUser"> <!-- tipo arquivo que aceita qualquer tipo de imagems apenas-->
+      <label for="photo">Uppload photo</label>
+        <input type="file" accept="image/*" name="photoUser" id="photo"> <!-- tipo arquivo que aceita qualquer tipo de imagems apenas-->
         <br>
       </fieldset>
 
@@ -41,14 +41,14 @@
         <legend>Perfil</legend>
 
         <p>Gênero: </p>
-        <input type="radio" name="userGender" value="Feminino">
-        <label for="userGender">Feminino</label>
+        <input type="radio" name="userGender" id="woman-gender" value="Feminino">
+        <label for="woman-gender">Feminino</label>
 
-        <input type="radio" name="userGender" value="Masculino">
-        <label for="userGender">Masculino</label>
+        <input type="radio" name="userGender" id="man-gender" value="Masculino">
+        <label for="man-gender">Masculino</label>
 
-        <input type="radio" name="userGender" value="Não Identificar">
-        <label for="userGender">Prefiro Não Informar</label>
+        <input type="radio" name="userGender" id="naoIdent-gender" value="Não Identificar">
+        <label for="naoIdent-gender">Prefiro Não Informar</label>
         <br>
         <p>Estado Civíl: </p>
         <select name="maritalStatus">
@@ -98,24 +98,24 @@
 
         <p>Redes Sociais:</p>
 
-        <input type="checkbox" name="social" value="instagram">
-        <label for="social">Instagram</label>
+        <input type="checkbox" name="social" id="insta" value="instagram">
+        <label for="insta">Instagram</label>
         <br>
 
-        <input type="checkbox" name="social" value="github">
-        <label for="social">Github</label>
+        <input type="checkbox" name="social" id="git" value="github">
+        <label for="git">Github</label>
         <br>
 
-        <input type="checkbox" name="social" value="linkedin">
-        <label for="social">Linkedin</label>
+        <input type="checkbox" name="social" id="linkd" value="linkedin">
+        <label for="linkd">Linkedin</label>
         <br>
 
-        <input type="checkbox" name="social" value="twitter">
-        <label for="social">Twitter</label>
+        <input type="checkbox" name="social" id="twt" value="twitter">
+        <label for="twt">Twitter</label>
         <br>
 
-        <input type="checkbox" name="social" value="facebook">
-        <label for="social">Facebook</label>
+        <input type="checkbox" name="social" id="face" value="facebook">
+        <label for="face">Facebook</label>
       </fieldset>
       <button type="submit">Enviar</button> <!-- Submit = botão que submete as infos para algum lugar-->
     </form>
@@ -125,5 +125,6 @@
 
 
 <!-- Como colocar para, eu clicar na palavra já direcionar para o usuário poder marcar ou digitar o campo de texto
-- Faço isso por meio do ID 
+- Faço isso por meio do ID
+não podemos ter um ID repetido é tipo CPF do elemento 
 -->
