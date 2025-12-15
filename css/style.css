@@ -24,6 +24,7 @@ header {
   /* background-color: aqua;  -- São elementos de bloco e não de linha*/
   text-align: center; /*Centraliza*/
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 image{
@@ -32,12 +33,14 @@ image{
 
 h1{
   font-family: "Fjalla One", sans-serif, Arial;
+  text-align: center;
 }
 
 form{ /*Configura todo o formulário*/
   background-color: #ffffff;
   padding: 15px; /*Espaçamento interno entre os elementos*/
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 fieldset{ /*Separações entre os itens do forms*/
@@ -58,6 +61,12 @@ label{
   display: inline-block; /*Vou transformar em um block que se comporte como linha*/
   margin-bottom: 5px;
 }
+
+p{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
 input, section ,textarea{
   /*background-color: red;*/ /*Usado para verificar o tamanho do input*/
   width: 100%;
@@ -95,4 +104,19 @@ input[type="text"]:valid,
 input[type="number"]:valid,
 input[type="email"]:valid{
   border-color: green;
+}
+
+button {
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 100px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #cccccc;
 }

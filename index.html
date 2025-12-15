@@ -17,8 +17,7 @@
     <h1>Pesquisa Online</h1>
   </header>
   <section>
-    <form action="" method="get"> <!-- Action é para onde vai enviar os dados | método "get" pega os dados e deixa aparente na URL | método "post" = onde os dados vão em um header como uma requisição para o backend-->
-
+    <form action="pesquisa-culturama/sucesso.html" method="get"> <!-- Action é para onde vai enviar os dados | método "get" pega os dados e deixa aparente na URL | método "post" = onde os dados vão em um header como uma requisição para o backend-->
       <!-- Determinamos uma seção para que os mecanismos de busca interpretem -->
       <fieldset> <!-- Navegador aqui começa um conjunto de elementos-->
         <legend>Dados Pessoais</legend>
@@ -39,7 +38,7 @@
       <label for="phone">Número de Telefone</label>      <!-- Placeholder indica como o cliente deve preencher-->
         <input type="tel" name="userPhone" id="phone" pattern="[0-9]{11}" placeholder="00000000000"> <!-- Precisamos passar um padrão de preenchimento | Numero 0 - 9, 11 digitos-->
         <br>
-      <label for="photo">Uppload photo</label>
+      <label for="photo">Uppload photo</label> <!-- Bloquear o tamanho da imagem e o tipo pode causar bunerabilidade!!!!!!!-->
         <input type="file" accept="image/*" name="photoUser" id="photo"> <!-- tipo arquivo que aceita qualquer tipo de imagems apenas-->
         <br>
       </fieldset>
