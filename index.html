@@ -59,8 +59,9 @@
         <input type="radio" name="userGender" id="naoIdent-gender" value="Não Identificar">
         <label for="naoIdent-gender">Prefiro Não Informar</label>
         <br>
-        <p>Estado Civíl: </p>
-        <select name="maritalStatus">
+        <label for="maritalStatus">Estado Civíl: </label>
+        <br>
+        <select name="maritalStatus" id="maritalStatus">
           <option value="Not Select">Selecione...</option>
           <option value="Casado">Casado</option>
           <option value="Solteiro">Solteiro</option>
@@ -68,7 +69,7 @@
           <option value="Divorciado">Divorciado</option>
         </select>
         <label for="stateUser">Estado: </label>
-        <select name="stateUser" required>
+        <select id="stateUser" name="stateUser" required>
           <option value="acre">Acre</option>
           <option value="alagoas">Alagoas</option>
           <option value="amapa">Amapá</option>
@@ -169,10 +170,10 @@
       <fieldset>
         <legend>Confirmação</legend>
         <label for="lgpd">Eu aceito participar da pesquisa</label>
-        <input type="checkbox" name="userLGPD" id="lgpd" value="confimed" required aria-invalid="">
+        <input type="checkbox" name="userLGPD" id="lgpd" value="confimed" required aria-checked="false">
         <br>
         <label for="resultform">Deseja receber o resultado por email?</label>
-        <input type="checkbox" name="resultFormUser" id="resultform" value="confimed">
+        <input type="checkbox" name="resultFormUser" id="resultform" value="confimed" aria-checked="false">
       </fieldset>
       <button type="submit" aria-label="Enviar dados do formulário">Enviar</button> <!-- Submit = botão que submete as infos para algum lugar-->
       <button type="reset" aria-label="Limpar dados do formulário">Limpar</button> <!-- Submit = botão que submete as infos para algum lugar-->
