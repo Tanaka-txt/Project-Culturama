@@ -41,7 +41,8 @@
          <small id="phoneHelp">Preencha com 11 dígitos, no formato DDD + Números sem espaços ou hífen.</small> <!--Aqui o usuário ouve isso-->
         <br>
       <label for="photo">Uppload photo</label> <!-- Bloquear o tamanho da imagem e o tipo pode causar bunerabilidade!!!!!!!-->
-        <input type="file" accept="image/*" name="photoUser" id="photo"> <!-- tipo arquivo que aceita qualquer tipo de imagems apenas-->
+        <input type="file" accept="image/*" name="photoUser" id="photo" aria-describedby="photoHelp"> <!-- tipo arquivo que aceita qualquer tipo de imagems apenas-->
+        <small id="photoHelp">envie uma imagem opicional no formato jpeg ou png, para ser colocada de perfil no formulário</small>
         <br>
       </fieldset>
 
