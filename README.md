@@ -1,9 +1,9 @@
 <div align="center">
 
-# 🧩 Formulário Web Responsivo  
+#  Formulário Web Responsivo  
 ### HTML5 • CSS3 • Validações Nativas
 
-<img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow?style=for-the-badge">
+<img src="https://img.shields.io/badge/Finished-brightgreen?style=for-the-badge">
 <img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5">
 <img src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3">
 
