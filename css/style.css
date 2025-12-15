@@ -67,6 +67,15 @@ p{
   font-weight: bold;
 }
 
+input[type="tel"]{
+  margin-bottom: 0px;
+}
+
+small{ /*Inline, preciso fazer ela ser inline block*/
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
 input, section ,textarea{
   /*background-color: red;*/ /*Usado para verificar o tamanho do input*/
   width: 100%;
@@ -105,6 +114,8 @@ input[type="number"]:valid,
 input[type="email"]:valid{
   border-color: green;
 }
+
+
 
 button {
   margin-top: 15px;

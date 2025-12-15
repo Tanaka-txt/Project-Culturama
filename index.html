@@ -36,7 +36,9 @@
         <input type="email" name="userEmail" id="email" required placeholder="seuemail@gmail.com">
         <br>
       <label for="phone">Número de Telefone</label>      <!-- Placeholder indica como o cliente deve preencher-->
-        <input type="tel" name="userPhone" id="phone" pattern="[0-9]{11}" placeholder="00000000000"> <!-- Precisamos passar um padrão de preenchimento | Numero 0 - 9, 11 digitos-->
+        <input type="tel" name="userPhone" id="phone" pattern="[0-9]{11}" placeholder="00000000000" aria-describedby="phoneHelp"> <!-- Precisamos passar um padrão de preenchimento | Numero 0 - 9, 11 digitos-->
+        <!-- Placeholder não fica bem definido o interpretador web identifica como um ambiente vazio, pra isso usamos a tag small para definir a acessibilidade -->
+         <small id="phoneHelp">Preencha com 11 dígitos, no formato DDD + Números sem espaços ou hífen.</small> <!--Aqui o usuário ouve isso-->
         <br>
       <label for="photo">Uppload photo</label> <!-- Bloquear o tamanho da imagem e o tipo pode causar bunerabilidade!!!!!!!-->
         <input type="file" accept="image/*" name="photoUser" id="photo"> <!-- tipo arquivo que aceita qualquer tipo de imagems apenas-->
@@ -95,8 +97,8 @@
           <option value="tocantins">Tocantins</option>
         </select>
 
-        <label for="cityUser">Cidade:</label>
-        <input type="text" name="cityUser" id="userCity" autocomplete="address-level2"> <!-- autocomplete="address-level2" = campo destinado a sugerir auto complete de nivel 2 que são os campos de cidade-->
+        <label for="userCity">Cidade:</label>
+        <input type="text" name="userCity" id="userCity" autocomplete="address-level2"> <!-- autocomplete="address-level2" = campo destinado a sugerir auto complete de nivel 2 que são os campos de cidade-->
       </fieldset>
 
       <fieldset>
@@ -198,7 +200,7 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
-  
+
 </body>
 </html>
 
