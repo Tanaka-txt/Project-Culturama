@@ -1,63 +1,134 @@
-# Lidando com Formulários
+<div align="center">
 
-## 1. Recebemos um email de uma empresa Insight
+# 🧩 Formulário Web Responsivo  
+### HTML5 • CSS3 • Validações Nativas
 
- - Precisam de um formulário simples de Html5 e css3 (Sem javascript / responsivo e funcional)
+<img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow?style=for-the-badge">
+<img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5">
+<img src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3">
 
-# Seções do fomulário
 
----
-
-## Dados pessoais
-
-- Nome **Obrigatório**
-- Idade **Obrigatório - Numeros entre 12 e 100**
-- Data de Nascimento **opcional**
-- E-mail **Obrigatório Validar Formato**
-- Telefone **Opcional, validar 11 digitos**
-- upload de foto **Opcional**
+</div>
 
 ---
 
-## Perfil - Desenvolvimento
- 
-- Genero **Escolha unica**
-- Estado civil **Lista suspensa**
-- Estado **Lista suspensa - Obrigatório**
-- Cidade **Texto livre**
+## 📌 Visão Geral
+
+Este projeto foi desenvolvido a partir de uma solicitação da empresa **Insight**, com o objetivo de criar um **formulário web funcional, responsivo e bem estruturado**, utilizando **apenas HTML5 e CSS3**, sem qualquer dependência de JavaScript.
+
+O foco principal está no uso correto de:
+- Validações nativas do HTML5
+- Estrutura semântica
+- Experiência do usuário (UX)
+- Organização e legibilidade do código
+- Boas práticas de desenvolvimento web
+
+> 🔒 O formulário segue princípios de **proteção de dados (LGPD)** por meio de consentimento explícito do usuário.
 
 ---
 
-## Hábitos
+## 🛠️ Tecnologias & Recursos
 
-- Redes sociais **Multipla escolha checkbox**
-- Estilo musical **Opçoes pré definidar mas deve ter texto livre**
-- Cor favorita **Seletor de cor**
+| Tecnologia | Descrição |
+|----------|----------|
+| 🌐 **HTML5** | Estrutura semântica e validações nativas |
+| 🎨 **CSS3** | Layout, responsividade e estilização |
+| 🔤 **Google Fonts** | Tipografia profissional |
+| ❌ **JavaScript** | Não utilizado (por requisito) |
 
----
-
-## Opinião
-
-- Escala de satisfação **Escolha unica (Otima, boa, regular, ruim)**
-- comentario aberto **Campo aberto com placeholder**
-
----
-
-## Confirmação
-
-- Consentimento (LGPD) **Checkbox - Obrigatório**
-- Receber resultados **Opcional**
+### 🖋️ Tipografia
+- **Títulos:** *Fjalla One*
+- **Textos:** *Work Sans*
 
 ---
 
-## Botões
+## 📱 Responsividade
 
-- Enviar
-- Limpar
+✔ Layout adaptável para desktop, tablet e mobile  
+✔ Uso de unidades flexíveis e boas práticas de CSS  
+✔ Compatível com navegadores modernos  
 
 ---
 
-## Fontes Usadas do Google Fontes
+## 🧩 Estrutura do Formulário
 
-Titulos = Fjalla One
-Textos = Work Sans
+### 👤 Dados Pessoais
+- **Nome** *(obrigatório)*
+- **Idade** *(obrigatório)*  
+  - Apenas números  
+  - Faixa etária permitida: **12 a 100**
+- **Data de Nascimento** *(opcional)*
+- **E-mail** *(obrigatório)*  
+  - Validação automática de formato
+- **Telefone** *(opcional)*  
+  - Exatamente **11 dígitos**
+- **Upload de Foto** *(opcional)*
+
+---
+
+### 💻 Perfil do Usuário
+- **Gênero** *(seleção única)*
+- **Estado Civil** *(lista suspensa)*
+- **Estado** *(lista suspensa – obrigatório)*
+- **Cidade** *(campo de texto livre)*
+
+---
+
+### 🎧 Hábitos & Preferências
+- **Redes Sociais** *(checkbox – múltipla escolha)*
+- **Estilo Musical**
+  - Opções pré-definidas
+  - Campo adicional para texto livre
+- **Cor Favorita** *(color picker)*
+
+---
+
+### 📝 Opinião do Usuário
+- **Escala de Satisfação**
+  - Ótima
+  - Boa
+  - Regular
+  - Ruim
+- **Comentário Aberto**
+  - Campo de texto com *placeholder*
+
+---
+
+### ✅ Confirmação & Consentimento
+- **Aceite dos Termos (LGPD)**  
+  - Checkbox  
+  - **Obrigatório**
+- **Deseja Receber os Resultados** *(opcional)*
+
+---
+
+### 🔘 Ações Disponíveis
+- **Enviar formulário**
+- **Limpar campos**
+
+---
+
+## ♿ Acessibilidade *(Planejada)*
+
+Este projeto será expandido para atender boas práticas de acessibilidade web (**WCAG**):
+
+- Uso correto de `label` e `fieldset`
+- Contraste adequado de cores
+- Navegação completa via teclado
+- Atributos ARIA
+- Estrutura semântica aprimorada
+
+---
+
+## 📂 Estrutura de Pastas
+
+```text
+📁 projeto-formulario
+│
+├── 📄 index.html
+├── 📁 css
+│   └── 🎨 style.css
+├── 📁 assets
+│   └── 🖼️ imagens
+└── 📄 README.md
+```
